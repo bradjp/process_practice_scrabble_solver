@@ -25,4 +25,12 @@ describe 'Scrabble' do
     scrabble = Scrabble.new('f')
     expect(scrabble.score).to eq(4)
   end
+  it "returns a score of 6 when passed 'street'" do
+    scrabble = Scrabble.new('street')
+    expect(scrabble.score).to eq(6)
+  end
+  it "returns a score of 22 when passed 'quirky'" do
+    scrabble = Scrabble.new('quirky')
+    expect(scrabble.score).to eq(22)
+  end
 end
