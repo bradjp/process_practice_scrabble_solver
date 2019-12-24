@@ -17,4 +17,8 @@ describe 'Scrabble' do
     scrabble = Scrabble.new(nil)
     expect(scrabble.score).to eq(0)
   end
+  it "returns a score of 1 when passed 'a'" do
+    scrabble = Scrabble.new('a')
+    expect(scrabble.score).to eq(1)
+  end
 end
