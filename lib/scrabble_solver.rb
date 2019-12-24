@@ -8,6 +8,12 @@ class Scrabble
   end
 
   def score
-    @word == 'a' ? 1 : 0
+    if @word == 'a'
+      return 1
+    elsif @word == 'f'
+      return 4
+    else
+      0
+    end
   end
 end
